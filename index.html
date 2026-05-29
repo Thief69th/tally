@@ -3,114 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tally Prime Blog for Students</title>
-    <meta name="description" content="Learn Tally Prime with our comprehensive blog for students. Available in English and Hindi.">
+    <title>Tally</title>
+    <!-- Use Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="header-container">
             <h1 class="logo">
-                <span class="lang-en">Tally Prime Student Blog</span>
-                <span class="lang-hi hidden">टैली प्राइम स्टूडेंट ब्लॉग</span>
+                <span class="lang-en">Tally.</span>
+                <span class="lang-hi hidden">टैली.</span>
             </h1>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#" class="lang-en">Home</a><a href="#" class="lang-hi hidden">होम</a></li>
-                    <li><a href="#about" class="lang-en">About Tally</a><a href="#about" class="lang-hi hidden">टैली के बारे में</a></li>
+                    <li><a href="#home" class="lang-en">Home</a><a href="#home" class="lang-hi hidden">होम</a></li>
+                    <li><a href="#about" class="lang-en">About</a><a href="#about" class="lang-hi hidden">बारे में</a></li>
                     <li><a href="#features" class="lang-en">Features</a><a href="#features" class="lang-hi hidden">विशेषताएं</a></li>
+                    <li><a href="#blog" class="lang-en">Blog</a><a href="#blog" class="lang-hi hidden">ब्लॉग</a></li>
+                    <li><a href="#contact" class="lang-en">Contact</a><a href="#contact" class="lang-hi hidden">संपर्क</a></li>
                 </ul>
             </nav>
-            <button id="lang-toggle" class="btn">Change Language to Hindi</button>
+            <button id="lang-toggle" class="btn">
+                <span class="lang-text">A/अ</span> Hindi
+            </button>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        <section id="home" class="hero fade-in">
             <div class="hero-content">
-                <h2 class="lang-en">Master Accounting with Tally Prime</h2>
-                <h2 class="lang-hi hidden">टैली प्राइम के साथ अकाउंटिंग में महारत हासिल करें</h2>
-                <p class="lang-en">Your ultimate guide to learning Tally Prime from scratch. Read our blogs to become a professional accountant.</p>
-                <p class="lang-hi hidden">शुरुआत से टैली प्राइम सीखने के लिए आपकी अंतिम मार्गदर्शिका। एक पेशेवर एकाउंटेंट बनने के लिए हमारे ब्लॉग पढ़ें।</p>
+                <div class="badge">
+                    <span class="lang-en">The Ultimate Student Guide</span>
+                    <span class="lang-hi hidden">छात्रों के लिए अंतिम मार्गदर्शिका</span>
+                </div>
+                <h2 class="lang-en title-large">Master Accounting with <br><strong>Tally</strong></h2>
+                <h2 class="lang-hi hidden title-large"><strong>टैली</strong> के साथ <br>अकाउंटिंग में महारत हासिल करें</h2>
+                <p class="lang-en subtitle">Your journey to becoming a professional accountant starts here. Learn from scratch with our premium resources.</p>
+                <p class="lang-hi hidden subtitle">एक पेशेवर एकाउंटेंट बनने की आपकी यात्रा यहां से शुरू होती है। हमारे प्रीमियम संसाधनों के साथ शुरुआत से सीखें।</p>
+                <div class="hero-actions">
+                    <a href="#blog" class="btn-primary lang-en">Start Reading</a>
+                    <a href="#blog" class="btn-primary lang-hi hidden">पढ़ना शुरू करें</a>
+                </div>
             </div>
         </section>
 
-        <section id="blogs" class="blog-section">
-            <div class="blog-container">
-                <article class="blog-card" id="about">
-                    <h3 class="lang-en">Introduction to Tally Prime</h3>
-                    <h3 class="lang-hi hidden">टैली प्राइम का परिचय</h3>
-                    <div class="blog-content lang-en">
-                        <p>Tally Prime is a complete business management software for small and medium businesses. Tally Prime helps you manage accounting, inventory, banking, taxation, banking, payroll and much more to get rid of complexities, and in turn, focus on business growth.</p>
-                        <p>For students, learning Tally Prime is a stepping stone to a career in finance and accounting. It is widely used across the world, making it a valuable skill to possess. It simplifies the recording of financial transactions and automatically generates important reports like the Balance Sheet and Profit & Loss statement.</p>
-                    </div>
-                    <div class="blog-content lang-hi hidden">
-                        <p>टैली प्राइम छोटे और मध्यम व्यवसायों के लिए एक संपूर्ण व्यवसाय प्रबंधन सॉफ्टवेयर है। टैली प्राइम आपको अकाउंटिंग, इन्वेंट्री, बैंकिंग, कराधान, पेरोल और बहुत कुछ प्रबंधित करने में मदद करता है ताकि जटिलताओं से छुटकारा मिल सके और इसके बदले व्यवसाय के विकास पर ध्यान केंद्रित किया जा सके।</p>
-                        <p>छात्रों के लिए, टैली प्राइम सीखना वित्त और लेखांकन में करियर बनाने की दिशा में एक कदम है। इसका दुनिया भर में व्यापक रूप से उपयोग किया जाता है, जो इसे एक मूल्यवान कौशल बनाता है। यह वित्तीय लेनदेन की रिकॉर्डिंग को सरल बनाता है और स्वचालित रूप से बैलेंस शीट और लाभ और हानि विवरण जैसी महत्वपूर्ण रिपोर्ट तैयार करता है।</p>
-                    </div>
-                </article>
+        <section id="about" class="section fade-in">
+            <div class="container text-center">
+                <h3 class="lang-en section-title">What is Tally?</h3>
+                <h3 class="lang-hi hidden section-title">टैली क्या है?</h3>
+                <p class="lang-en section-desc">Tally is a world-class business management software used for accounting, inventory, and compliance. It is the gold standard for financial professionals globally.</p>
+                <p class="lang-hi hidden section-desc">टैली अकाउंटिंग, इन्वेंट्री और अनुपालन के लिए उपयोग किया जाने वाला एक विश्व स्तरीय व्यवसाय प्रबंधन सॉफ्टवेयर है। यह विश्व स्तर पर वित्तीय पेशेवरों के लिए स्वर्ण मानक है।</p>
+            </div>
+        </section>
 
-                <article class="blog-card" id="features">
-                    <h3 class="lang-en">Important Features of Tally Prime</h3>
-                    <h3 class="lang-hi hidden">टैली प्राइम की महत्वपूर्ण विशेषताएं</h3>
-                    <div class="blog-content lang-en">
-                        <p>Tally Prime comes with a wide range of features designed to make accounting efficient and error-free:</p>
-                        <ul>
-                            <li><strong>Simplicity:</strong> Easy to learn and use with intuitive navigation.</li>
-                            <li><strong>Reliability:</strong> Highly reliable data handling even during power failures.</li>
-                            <li><strong>Flexibility:</strong> Adapts to your business needs, whether you are dealing with inventory or just accounting.</li>
-                            <li><strong>GST Compliance:</strong> Simplifies GST returns and invoicing.</li>
-                            <li><strong>Insightful Reports:</strong> Get real-time reports to make informed business decisions.</li>
-                        </ul>
+        <section id="features" class="section fade-in">
+            <div class="container">
+                <h3 class="lang-en section-title text-center">Powerful Features</h3>
+                <h3 class="lang-hi hidden section-title text-center">शक्तिशाली विशेषताएं</h3>
+                <div class="grid-3">
+                    <div class="feature-card">
+                        <div class="icon">📈</div>
+                        <h4 class="lang-en">Insightful Reports</h4>
+                        <h4 class="lang-hi hidden">व्यावहारिक रिपोर्ट</h4>
+                        <p class="lang-en">Get real-time insights with automatically generated Balance Sheets and P&L statements.</p>
+                        <p class="lang-hi hidden">स्वचालित रूप से उत्पन्न बैलेंस शीट और पी एंड एल स्टेटमेंट के साथ रीयल-टाइम अंतर्दृष्टि प्राप्त करें।</p>
                     </div>
-                    <div class="blog-content lang-hi hidden">
-                        <p>टैली प्राइम कई विशेषताओं के साथ आता है जो अकाउंटिंग को कुशल और त्रुटि-मुक्त बनाने के लिए डिज़ाइन की गई हैं:</p>
-                        <ul>
-                            <li><strong>सरलता:</strong> सहज नेविगेशन के साथ सीखने और उपयोग करने में आसान।</li>
-                            <li><strong>विश्वसनीयता:</strong> बिजली कटौती के दौरान भी अत्यधिक विश्वसनीय डेटा हैंडलिंग।</li>
-                            <li><strong>लचीलापन:</strong> आपकी व्यावसायिक आवश्यकताओं के अनुकूल, चाहे आप इन्वेंट्री से निपट रहे हों या केवल अकाउंटिंग से।</li>
-                            <li><strong>GST अनुपालन:</strong> GST रिटर्न और चालान को सरल बनाता है।</li>
-                            <li><strong>व्यावहारिक रिपोर्ट:</strong> सूचित व्यावसायिक निर्णय लेने के लिए रीयल-टाइम रिपोर्ट प्राप्त करें।</li>
-                        </ul>
+                    <div class="feature-card">
+                        <div class="icon">⚡</div>
+                        <h4 class="lang-en">Lightning Fast</h4>
+                        <h4 class="lang-hi hidden">बिजली सा तेज़</h4>
+                        <p class="lang-en">Optimized for speed and efficiency. Process thousands of transactions without lag.</p>
+                        <p class="lang-hi hidden">गति और दक्षता के लिए अनुकूलित। बिना अंतराल के हजारों लेनदेन की प्रक्रिया करें।</p>
                     </div>
-                </article>
-                
-                <article class="blog-card">
-                    <h3 class="lang-en">Understanding Vouchers in Accounting</h3>
-                    <h3 class="lang-hi hidden">अकाउंटिंग में वाउचर को समझना</h3>
-                    <div class="blog-content lang-en">
-                        <p>A voucher is a document that contains details of a financial transaction. In Tally Prime, every transaction is recorded using a specific voucher type.</p>
-                        <p>There are several types of vouchers in Tally, including:</p>
-                        <ul>
-                            <li><strong>Receipt Voucher (F6):</strong> Used when money is received.</li>
-                            <li><strong>Payment Voucher (F5):</strong> Used when money is paid.</li>
-                            <li><strong>Sales Voucher (F8):</strong> Used to record sales transactions.</li>
-                            <li><strong>Purchase Voucher (F9):</strong> Used to record purchase transactions.</li>
-                            <li><strong>Contra Voucher (F4):</strong> Used for cash and bank transactions.</li>
-                        </ul>
-                        <p>Understanding these vouchers is essential for anyone starting their journey in computerized accounting.</p>
+                    <div class="feature-card">
+                        <div class="icon">🔒</div>
+                        <h4 class="lang-en">Highly Secure</h4>
+                        <h4 class="lang-hi hidden">अत्यधिक सुरक्षित</h4>
+                        <p class="lang-en">Bank-grade security ensures that your financial data is completely safe and reliable.</p>
+                        <p class="lang-hi hidden">बैंक-ग्रेड सुरक्षा यह सुनिश्चित करती है कि आपका वित्तीय डेटा पूरी तरह से सुरक्षित और विश्वसनीय है।</p>
                     </div>
-                    <div class="blog-content lang-hi hidden">
-                        <p>वाउचर एक दस्तावेज़ है जिसमें वित्तीय लेनदेन का विवरण होता है। टैली प्राइम में, हर लेनदेन को एक विशिष्ट वाउचर प्रकार का उपयोग करके रिकॉर्ड किया जाता है।</p>
-                        <p>टैली में कई प्रकार के वाउचर होते हैं, जिनमें शामिल हैं:</p>
-                        <ul>
-                            <li><strong>रसीद वाउचर (F6):</strong> जब पैसा प्राप्त होता है तो उपयोग किया जाता है।</li>
-                            <li><strong>भुगतान वाउचर (F5):</strong> जब पैसे का भुगतान किया जाता है तो उपयोग किया जाता है।</li>
-                            <li><strong>बिक्री वाउचर (F8):</strong> बिक्री लेनदेन रिकॉर्ड करने के लिए उपयोग किया जाता है।</li>
-                            <li><strong>खरीद वाउचर (F9):</strong> खरीद लेनदेन रिकॉर्ड करने के लिए उपयोग किया जाता है।</li>
-                            <li><strong>कंट्रा वाउचर (F4):</strong> नकद और बैंक लेनदेन के लिए उपयोग किया जाता है।</li>
-                        </ul>
-                        <p>कंप्यूटरीकृत अकाउंटिंग में अपनी यात्रा शुरू करने वाले किसी भी व्यक्ति के लिए इन वाउचर को समझना आवश्यक है।</p>
-                    </div>
-                </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section fade-in">
+            <div class="container">
+                <h3 class="lang-en section-title text-center">Latest Articles</h3>
+                <h3 class="lang-hi hidden section-title text-center">नवीनतम लेख</h3>
+                <div class="blog-grid">
+                    <article class="blog-card glass">
+                        <h3 class="lang-en">Introduction to Tally</h3>
+                        <h3 class="lang-hi hidden">टैली का परिचय</h3>
+                        <div class="blog-content lang-en">
+                            <p>Tally is a complete business management software for small and medium businesses. Tally helps you manage accounting, inventory, banking, taxation, and much more to get rid of complexities.</p>
+                        </div>
+                        <div class="blog-content lang-hi hidden">
+                            <p>टैली छोटे और मध्यम व्यवसायों के लिए एक संपूर्ण व्यवसाय प्रबंधन सॉफ्टवेयर है। टैली आपको अकाउंटिंग, इन्वेंट्री, बैंकिंग, कराधान, और बहुत कुछ प्रबंधित करने में मदद करता है।</p>
+                        </div>
+                        <a href="#" class="read-more lang-en">Read Article &rarr;</a>
+                        <a href="#" class="read-more lang-hi hidden">लेख पढ़ें &rarr;</a>
+                    </article>
+
+                    <article class="blog-card glass">
+                        <h3 class="lang-en">Understanding Vouchers</h3>
+                        <h3 class="lang-hi hidden">वाउचर को समझना</h3>
+                        <div class="blog-content lang-en">
+                            <p>A voucher is a document that contains details of a financial transaction. In Tally, every transaction is recorded using a specific voucher type like Receipt, Payment, or Sales.</p>
+                        </div>
+                        <div class="blog-content lang-hi hidden">
+                            <p>वाउचर एक दस्तावेज़ है जिसमें वित्तीय लेनदेन का विवरण होता है। टैली में, हर लेनदेन को एक विशिष्ट वाउचर प्रकार जैसे रसीद, भुगतान या बिक्री का उपयोग करके रिकॉर्ड किया जाता है।</p>
+                        </div>
+                        <a href="#" class="read-more lang-en">Read Article &rarr;</a>
+                        <a href="#" class="read-more lang-hi hidden">लेख पढ़ें &rarr;</a>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <p class="lang-en">&copy; 2026 Tally Prime Student Blog. All rights reserved.</p>
-            <p class="lang-hi hidden">&copy; 2026 टैली प्राइम स्टूडेंट ब्लॉग. सभी अधिकार सुरक्षित।</p>
+    <footer id="contact">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h2 class="logo">
+                    <span class="lang-en">Tally.</span>
+                    <span class="lang-hi hidden">टैली.</span>
+                </h2>
+                <p class="lang-en">Empowering students with financial knowledge.</p>
+                <p class="lang-hi hidden">छात्रों को वित्तीय ज्ञान के साथ सशक्त बनाना।</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="lang-en">Quick Links</h4>
+                <h4 class="lang-hi hidden">त्वरित लिंक</h4>
+                <ul>
+                    <li><a href="#home" class="lang-en">Home</a><a href="#home" class="lang-hi hidden">होम</a></li>
+                    <li><a href="#about" class="lang-en">About</a><a href="#about" class="lang-hi hidden">बारे में</a></li>
+                    <li><a href="#blog" class="lang-en">Articles</a><a href="#blog" class="lang-hi hidden">लेख</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="lang-en">Legal</h4>
+                <h4 class="lang-hi hidden">कानूनी</h4>
+                <ul>
+                    <li><a href="#" class="lang-en">Privacy Policy</a><a href="#" class="lang-hi hidden">गोपनीयता नीति</a></li>
+                    <li><a href="#" class="lang-en">Terms of Service</a><a href="#" class="lang-hi hidden">सेवा की शर्तें</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p class="lang-en">&copy; 2026 Tally Student Blog. All rights reserved.</p>
+            <p class="lang-hi hidden">&copy; 2026 टैली स्टूडेंट ब्लॉग. सभी अधिकार सुरक्षित।</p>
             <div class="clock-container">
                 <span class="lang-en">Local Time: </span>
                 <span class="lang-hi hidden">स्थानीय समय: </span>
@@ -120,7 +164,5 @@
     </footer>
 
     <script src="script.js"></script>
-<div style="margin-top: 50px;"><h2>Latest Pages</h2>
-    <div class="post-item"><a href="Reversing Journal.html">Reversing Journal</a> <span class="date">May 29, 2026</span></div></div>
 </body>
 </html>
