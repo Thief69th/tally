@@ -93,6 +93,7 @@
             <div class="container">
                 <h3 class="lang-en section-title text-center">Latest Articles</h3>
                 <h3 class="lang-hi hidden section-title text-center">नवीनतम लेख</h3>
+                
                 <div class="blog-grid">
                     <article class="blog-card glass">
                         <h3 class="lang-en">Introduction to Tally</h3>
@@ -119,6 +120,30 @@
                         <a href="#" class="read-more lang-en">Read Article &rarr;</a>
                         <a href="#" class="read-more lang-hi hidden">लेख पढ़ें &rarr;</a>
                     </article>
+
+                    <!-- ==== YAHAN SE PAGEIT KA MAGIC START HOTA HAI ==== -->
+                    <!-- PAGEIT_AUTO_INJECT_START -->
+                    <!-- PAGEIT_AUTO_INJECT_END -->
+
+                    <!-- YEH HIDDEN TEMPLATE PAGEIT KO BATAYEGA KI CARD KAISE DIKHNA CHAHIYE -->
+                    <div style="display: none;">
+                        <!-- PAGEIT_TEMPLATE_START -->
+                        <article class="blog-card glass">
+                            <h3 class="lang-en">{title}</h3>
+                            <h3 class="lang-hi hidden">{title}</h3>
+                            <div class="blog-content lang-en">
+                                <p>Learn more about {title} in this detailed guide.</p>
+                            </div>
+                            <div class="blog-content lang-hi hidden">
+                                <p>इस विस्तृत मार्गदर्शिका में {title} के बारे में अधिक जानें।</p>
+                            </div>
+                            <a href="{url}" class="read-more lang-en">Read Article &rarr;</a>
+                            <a href="{url}" class="read-more lang-hi hidden">लेख पढ़ें &rarr;</a>
+                        </article>
+                        <!-- PAGEIT_TEMPLATE_END -->
+                    </div>
+                    <!-- ==== PAGEIT MAGIC END ==== -->
+
                 </div>
             </div>
         </section>
@@ -164,7 +189,5 @@
     </footer>
 
     <script src="script.js"></script>
-<div style="margin-top: 50px;"><h2>Latest Pages</h2>
-    <div class="post-item"><a href="Reversing Journal.html">Reversing Journal</a> <span class="date">May 29, 2026</span></div></div>
 </body>
 </html>
