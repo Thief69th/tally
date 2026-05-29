@@ -95,38 +95,11 @@
                 <h3 class="lang-hi hidden section-title text-center">नवीनतम लेख</h3>
                 
                 <div class="blog-grid">
-
-                    <!-- ==== NAYE BLOGS SABSE UPAR AAYENGE ==== -->
+                    <!-- NAYE BLOG CARDS YAHAN AAYENGE -->
                     <!-- PAGEIT_AUTO_INJECT_START -->
-                        <article class="blog-card glass">
-                            <h3 class="lang-en">Delivery Note</h3>
-                            <h3 class="lang-hi hidden">Delivery Note</h3>
-                            <div class="blog-content lang-en">
-                                <p>Learn more about Delivery Note in this detailed guide. Read the full article to master this topic.</p>
-                            </div>
-                            <div class="blog-content lang-hi hidden">
-                                <p>इस विस्तृत मार्गदर्शिका में Delivery Note के बारे में अधिक जानें। इस विषय में महारत हासिल करने के लिए पूरा लेख पढ़ें।</p>
-                            </div>
-                            <a href="Delivery-Note.html" class="read-more lang-en">Read Article &rarr;</a>
-                            <a href="Delivery-Note.html" class="read-more lang-hi hidden">लेख पढ़ें &rarr;</a>
-                        </article>
-                        
-                        <article class="blog-card glass">
-                            <h3 class="lang-en">Delivery Note</h3>
-                            <h3 class="lang-hi hidden">Delivery Note</h3>
-                            <div class="blog-content lang-en">
-                                <p>Learn more about Delivery Note in this detailed guide. Read the full article to master this topic.</p>
-                            </div>
-                            <div class="blog-content lang-hi hidden">
-                                <p>इस विस्तृत मार्गदर्शिका में Delivery Note के बारे में अधिक जानें। इस विषय में महारत हासिल करने के लिए पूरा लेख पढ़ें।</p>
-                            </div>
-                            <a href="Delivery-Note.html" class="read-more lang-en">Read Article &rarr;</a>
-                            <a href="Delivery-Note.html" class="read-more lang-hi hidden">लेख पढ़ें &rarr;</a>
-                        </article>
-                        
                     <!-- PAGEIT_AUTO_INJECT_END -->
 
-                    <!-- ==== TEMPLATE ENGINE ==== -->
+                    <!-- TEMPLATE ENGINE FOR CARDS -->
                     <div style="display: none;">
                         <!-- PAGEIT_TEMPLATE_START -->
                         <article class="blog-card glass">
@@ -143,7 +116,6 @@
                         </article>
                         <!-- PAGEIT_TEMPLATE_END -->
                     </div>
-
                 </div>
             </div>
         </section>
@@ -189,5 +161,58 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- ==== NAYA FEATURE: FULL PAGE WRAPPER TEMPLATE ==== -->
+    <!-- Ye hidden code PageIt ko batayega ki naye blog page par Header aur Footer kaise daalna hai -->
+    <div style="display: none;">
+        <!-- PAGEIT_PAGE_TEMPLATE_START -->
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>{title} - Tally</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="style.css">
+            <style>
+                /* Blog page padhne ke liye clean design */
+                .blog-page-content { max-width: 800px; margin: 120px auto 50px; padding: 2rem; background: #fff; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+                .blog-page-content h1 { font-size: 2.5rem; margin-bottom: 1.5rem; }
+                .blog-page-content p { font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; color: #444; }
+                .blog-page-content img { max-width: 100%; border-radius: 8px; margin: 1rem 0; }
+            </style>
+        </head>
+        <body>
+            <header>
+                <div class="header-container">
+                    <h1 class="logo">Tally.</h1>
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: black;">&larr; Back to Home</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="blog-page-content">
+                <h1>{title}</h1>
+                <hr style="margin-bottom: 20px; border: 0; border-top: 1px solid #eee;">
+                
+                <div class="content-body">
+                    <!-- Aap jo bhi naya blog upload karenge, PageIt automatically use yahan is box ke andar rakh dega -->
+                    {content}
+                </div>
+            </main>
+
+            <footer style="background: #000; color: #fff; padding: 2rem; text-align: center; margin-top: 50px;">
+                <p>&copy; 2026 Tally Student Blog. All rights reserved.</p>
+            </footer>
+        </body>
+        </html>
+        <!-- PAGEIT_PAGE_TEMPLATE_END -->
+    </div>
+
 </body>
 </html>
